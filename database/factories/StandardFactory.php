@@ -17,7 +17,8 @@ class StandardFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'name' => $this->faker->word(),
+            'class_number' => $this->faker->numberBetween(1, 10),
         ];
     }
 }
